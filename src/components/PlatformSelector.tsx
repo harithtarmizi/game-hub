@@ -21,7 +21,6 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   if (error) return null;
 
   return (
-    <HStack marginBottom={3}>
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
           {selectedPlatform?.name || "Platforms"}
@@ -37,7 +36,6 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
           ))}
         </MenuList>
       </Menu>
-    </HStack>
   );
 };
 
